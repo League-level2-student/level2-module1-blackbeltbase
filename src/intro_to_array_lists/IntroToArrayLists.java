@@ -15,7 +15,6 @@ public class IntroToArrayLists {
 		}
 		//3. Print all the Strings using a standard for-loop
 		for(int i = 0; i< list.size(); i++) {
-			String s = list.get(i);
 			System.out.println(list.get(i));
 		}
 		//4. Print all the Strings using a for-each loop
@@ -32,11 +31,13 @@ public class IntroToArrayLists {
 			
 			System.out.println(list.get(i));
 		}
+		//If any words have e:
 		//7. Print only the Strings that have the letter 'e' in them.
-//		for(int i = 0; i< list.size(); i++) {
-//			String s = list.get(i);
-//			if(s.indexOf('e')) {
-//			System.out.println(list.get(i));}
-//		}
+		for(int i = 0; i< list.size(); i++) {
+			String s = list.get(i);
+		int no = s.indexOf('e');
+			if(no == 1) {
+			System.out.println(list.get(i));}
+		}
 	}
 }
